@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	    <style>
+	        body {
+	            height: 800px;
+	            display: flex;
+	            justify-content: center;
+	            align-items: center;
+	            background-color: pink;
+	        }
+	        h1 span {
+	            top: 20px; /*字符上下浮动*/
+	            position: relative;
+	            animation: loading 0.3s ease 0s infinite alternate; /*引用动画*/
+	            /* animation: 动画名称 动画时间 动画曲线 何时开始 播放次数 是否反方向; 
+	            alternate:表示动画先正常运行再反方向运行，并持续交替
+	            infinite:表示无限循环*/
+	            font-size: 100px;
+	            color: white;
+	            text-shadow: 0 1px 0  #CCC,
+	                        0 2px 0 #CCC,
+	                        0 3px 0 #CCC,
+	                        0 4px 0 #CCC,
+	                        0 5px 0 #CCC,
+	                        0 6px 0 #CCC,
+	                        0 7px 0 #CCC,
+	                        0 8px 0 #CCC,
+	                        0 9px 0 #CCC,
+	                        0 10px 10px rgba(0, 0, 0, 0.5);
+	     /*text-shadow: 水平阴影位置(必须) 垂直阴影位置(必须) 模糊距离(可选) 阴影颜色(可选);
+	       text-shadow: h-shadow v-shadow blur color; */
+	        }
+	        h1 span:nth-child(2) { 
+	            animation-delay: 0.1s; 
+	        }
+	        h1 span:nth-child(3) { 
+	            animation-delay: 0.2s; 
+	        }
+	        h1 span:nth-child(4) { 
+	            animation-delay: 0.3s; 
+	        }
+	        h1 span:nth-child(5) { 
+	            animation-delay: 0.4s; 
+	        }
+	        h1 span:nth-child(6) { 
+	            animation-delay: 0.5s; 
+	        }
+	        @keyframes loading {  /* 定义动画*/
+	            100% {
+	                top: -20px;  /*字符上下浮动*/
+	                text-shadow: 0 1px 0 #CCC,
+	                     0 2px 0 #CCC,
+	                     0 3px 0 #CCC,
+	                     0 4px 0 #CCC,
+	                     0 5px 0 #CCC,
+	                     0 6px 0 #CCC,
+	                     0 7px 0 #CCC,
+	                     0 8px 0 #CCC,
+	                     0 9px 0 #CCC,
+	                     0 50px 25px rgba(0, 0, 0, 0.3);     
+	  /*上升的时候阴影要在文字下面一些，所以垂直阴影的位置坐标和模糊距离要大一些*/
+	            }
+	        }
+			#click{
+				font-size: 30px;
+				margin: 0 20px 50px 0;
+				
+			}
+	    </style>
+
+	<body>
+		
+	    <h1>
+	        <span>网</span>
+	        <span>络</span>
+	        <span>诈</span>
+	        <span>骗</span>
+	        <span>防</span>
+	        <span>范</span>
+			<span>措</span>
+			<span>施</span>
+	    </h1>
+		<br><br><br><br><br>
+		<div class="click">
+			<div>
+				<a href="index5.html">下一页</a>
+			</div>
+		</div>
+			
+		
+	</body>
+
+</html>
